@@ -50,6 +50,6 @@ export async function GET(){
         return NextResponse.json({message:'Event Fetched Successfully.', events }, { status: 200 });
     }
     catch(e){
-        return NextResponse.json({message: 'Event Fetched Failed', error: e}, { status: 500 });
+        return NextResponse.json({message: 'Event Fetched Failed', error: e}, {status: 500});
     }
 }
